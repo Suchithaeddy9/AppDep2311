@@ -31,7 +31,7 @@ function Login1() {
           method:"POST",
           body:dataToSend
         }
-        let JSONData=await fetch("http://localhost:5697/Login1WithToken",reqOptions)
+        let JSONData=await fetch("/Login1WithToken",reqOptions)
         let JSOData=await JSONData.json();
         
         if(JSOData.status=="Success"){
@@ -56,7 +56,7 @@ function Login1() {
             method:"POST",
             body:dataToSend
         }
-        let JSONData=await fetch("http://localhost:5697/Login1",reqOptions);
+        let JSONData=await fetch("/Login1",reqOptions);
         let JSOData=await JSONData.json()
         if(JSOData.status=="Success"){
           localStorage.setItem("token",JSOData.data.token);

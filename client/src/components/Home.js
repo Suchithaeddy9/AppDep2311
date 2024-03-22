@@ -17,7 +17,7 @@ let deleteAccount=async()=>{
     method:"DELETE",
     body:dataToSend
   }
-  let JSONData=await fetch("http://localhost:5697/deleteProfile",reqOptions);
+  let JSONData=await fetch("/deleteProfile",reqOptions);
   let JSOData=await JSONData.json();
   alert(JSOData.msg);
   if(JSOData.status=="Success"){
@@ -31,7 +31,7 @@ return (
     <TopNavigation/>
     <h1 className='head' >HOME</h1>
     <h2 className='head1'>{`${storeObj.loginReducer.userDetails.firstName} ${storeObj.loginReducer.userDetails.lastName}`}</h2>
-    <img className='head2' src={`http://localhost:5697/${storeObj.loginReducer.userDetails.profilePic} `}></img>
+    <img className='head2' src={`/${storeObj.loginReducer.userDetails.profilePic} `}></img>
     <button type="button" onClick={()=>{
       deleteAccount();
     }}>Delete Account</button>
