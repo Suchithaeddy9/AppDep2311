@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+form{
+  background-color: burlywood;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 15px 15px 15px ;
+}
+form label{
+  display: inline-block;
+  width: 125px;
+
+}
+
+form div{
+  margin: 20px;
+
+}
+h1{
+  background-color:brown;
+  padding: 7.5px;
+  margin: 20px;
+  display:inline-block;
+}
+button{
+  background-color: yellowgreen;
+  padding: 7.5px;
+  margin: 20px;
+  display:inline-block;
+}
+.profilePicPreview{
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+nav{
+  background-color:aquamarine;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  font-size: 2.5rem;
+}
+
+.head{
+ margin-left: 575px;
+}
+
+.head1{
+  margin-left:550px;
+}
+ .head2{
+  margin-left: 475px;
+ }
+ 
